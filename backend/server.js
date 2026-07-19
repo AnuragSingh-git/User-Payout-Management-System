@@ -17,6 +17,7 @@ if (!process.env.JWT_SECRET) {
 }
 
 const app = express();
+console.log("CORS URL:", process.env.CORS_ORIGIN);
 
 app.use(cors({
   origin: process.env.CORS_ORIGIN || "*",
