@@ -19,7 +19,7 @@ if (!process.env.JWT_SECRET) {
 const app = express();
 
 app.use(cors({
-  origin: "https://user-payout-management-system-3ly3bvrms.vercel.app/" || "*",
+  origin: process.env.CORS_ORIGIN || "*",
   credentials: true,
 }));
 app.use(express.json());
