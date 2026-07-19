@@ -18,7 +18,10 @@ if (!process.env.JWT_SECRET) {
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: process.env.CORS_ORIGIN || "*",
+  Credential:true,
+}));
 app.use(express.json());
 
 app.get("/api/health", (req, res) => res.json({ ok: true, service: "payout-system-backend" }));
