@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 35px,
+    rgba(18, 24, 27, 0.035) 36px
+  );
+}
+
+::selection {
+  background: #1f7a4d33;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
