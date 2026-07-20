@@ -220,7 +220,7 @@ lastWithdrawalAt
 
 ## Sale
 
-Stores sales and their payout status.
+Stores sales and their payout statuses.
 
 Important fields:
 
