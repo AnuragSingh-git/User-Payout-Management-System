@@ -11,7 +11,7 @@ function protect(req, res, next) {
     req.user = { userId: payload.userId, role: payload.role };
     next();
   } catch (err) {
-    return res.status(401).json({ error: "Invalid or expired token" });
+    return res.status(401).json({ error: "Invalid or token" });
   }
 }
 
